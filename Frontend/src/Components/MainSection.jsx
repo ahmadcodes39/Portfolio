@@ -108,44 +108,52 @@ const MainSection = () => {
           </a>
         </div>
         <div data-aos="fade-down" data-aos-delay="200">
-          <ProjectCard
-            img={textTutils}
-            title={"TextTools"}
-            content={
-              "TextTools empowers you to organize and format your text effortlessly just the way you want"
-            }
-            tecStack={"React Application"}
-          />
+          <a href="https://github.com/ahmadcodes39/TextTools-ReactApp">
+            <ProjectCard
+              img={textTutils}
+              title={"TextTools"}
+              content={
+                "TextTools empowers you to organize and format your text effortlessly just the way you want"
+              }
+              tecStack={"React Application"}
+            />
+          </a>
         </div>
         <div data-aos="fade-left" data-aos-delay="300">
-          <ProjectCard
-            img={news}
-            title={"DailyNews"}
-            content={
-              "Daily News helps you to update about current affairs of your area"
-            }
-            tecStack={"React Application"}
-          />
+          <a href="https://github.com/ahmadcodes39/DailyDigest-News-App-React-App">
+            <ProjectCard
+              img={news}
+              title={"DailyDigest News"}
+              content={
+                "Daily News helps you to update about current affairs of your area"
+              }
+              tecStack={"React Application"}
+            />
+          </a>
         </div>
         <div data-aos="zoom-in" data-aos-delay="400">
-          <ProjectCard
-            img={AdminDashboard}
-            title={"QASF Admin Dashboard"}
-            content={
-              "An Admin Dashboard Completed for Qasim Ali Shah Foundation"
-            }
-            tecStack={"React Application"}
-          />
+          <a href="https://github.com/ahmadcodes39/CSS-Managment-App">
+            <ProjectCard
+              img={AdminDashboard}
+              title={"QASF Admin Dashboard"}
+              content={
+                "An Admin Dashboard Completed for Qasim Ali Shah Foundation"
+              }
+              tecStack={"React Application"}
+            />
+          </a>
         </div>
         <div data-aos="zoom-in-up" data-aos-delay="500">
-          <ProjectCard
-            img={PMS}
-            title={"Parking Management"}
-            content={
-              "Parking Management System lets you book spots and park easily."
-            }
-            tecStack={".Net WPF Architecture"}
-          />
+          <a href="https://github.com/ahmadcodes39/SE-project">
+            <ProjectCard
+              img={PMS}
+              title={"Parking Management"}
+              content={
+                "Parking Management System lets you book spots and park easily."
+              }
+              tecStack={".Net WPF Architecture"}
+            />
+          </a>
         </div>
       </div>
     </div>

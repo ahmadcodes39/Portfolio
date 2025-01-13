@@ -10,7 +10,7 @@ const GetinTouch = () => {
         If you'd like to work together or just chat,
         <p>
           feel free to{" "}
-          <a href="/contact" className="text-yellow-500 hover:underline">
+          <a href="https://wa.me/923290355987" target="_blank" className="text-yellow-500 hover:underline">
             contact me!
           </a>
         </p>
