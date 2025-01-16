@@ -7,11 +7,11 @@ const Navbar = () => {
   const inactiveClass = "text-gray-300";
 
   return (
-    <div id="home" className="flex justify-between items-center px-8 py-6 md:px-16 lg:px-36  bg-black z-1">
-      <h1 className="text-yellow-300 font-bold animate__animated animate__fadeInLeft">
+    <div id="home" className="flex justify-center sm:justify-between items-center px-4 sm:px-8 py-6 md:px-16 lg:px-36  bg-black z-1">
+      <h1 className="text-yellow-300 font-bold animate__animated animate__fadeInLeft hidden sm:flex">
         Mr Ahmad
       </h1>
-      <ul className="flex justify-center gap-4 items-center animate__animated animate__fadeInRight">
+      <ul className="flex justify-center gap-4 custom-gap items-center animate__animated animate__fadeInRight">
         {["home", "about", "projects", "services", "contact"].map((link) => (
           <li key={link}>
               <a

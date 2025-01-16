@@ -14,11 +14,11 @@ const SkillSection = ({ data }) => {
       <h2 className="text-2xl font-semibold text-yellow-500 mb-4" data-aos="fade-left" data-aos-delay="500">
         Skills & Expertise
       </h2>
-      <ul className="grid grid-cols-2 gap-4" data-aos="fade-right" data-aos-delay="500">
+      <ul className="grid grid-cols-2 gap-4 custom-grid" data-aos="fade-right" data-aos-delay="500">
         {data.map((data, index) => (
           <li
             key={index} 
-            className="bg-gray-700 p-4 rounded-md text-center flex gap-2 justify-center items-center"
+            className="bg-gray-700 p-4 rounded-md text-center flex gap-2 justify-center items-center width-full"
           >
             {data.skill}
             <span className="ml-2">{data.icon}</span>

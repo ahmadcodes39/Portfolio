@@ -15,3 +15,46 @@ html {
 .rotate-360 {
   animation: rotate360 1s ease-in-out;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .custom-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+  }
+  .custom-width {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 372px) {
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+  }
+  .width-full {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 332px) {
+  .custom-gap{
+    gap: 10px;
+  }
+  .custom-font{
+    font-size: 40px;
+  }
+  .font-break{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 332px) and (max-width: 400px) {
+  .custom-font{
+    font-size: 50px;
+  }
+}

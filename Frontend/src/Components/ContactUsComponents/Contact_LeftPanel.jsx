@@ -17,7 +17,7 @@ const Contact_LeftPanel = () => {
       data-aos="fade-left"
       data-aos-delay="500"
     >
-      <h1 className="text-6xl text-white font-bold">Let's talk!</h1>
+      <h1 className="text-6xl text-white font-bold custom-font">Let's talk!</h1>
       <p className="text-sm text-gray-300">Let's built something greate and amazing.</p>
       <img
         src={Contactus}

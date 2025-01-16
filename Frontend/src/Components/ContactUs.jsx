@@ -26,7 +26,7 @@ const ContactUs = () => {
       </div>
       <div
         id="contact"
-        className="bg-gray-900 rounded-md flex flex-col lg:flex-row items-center justify-between py-10 px-10 gap-10"
+        className="bg-gray-900 rounded-md flex flex-col lg:flex-row items-center justify-between p-3 sm:py-10 sm:px-10 gap-10"
         data-aos="zoom-in-up"
         data-aos-delay="500"
       >

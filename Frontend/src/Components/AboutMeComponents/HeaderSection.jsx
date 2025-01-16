@@ -3,6 +3,7 @@ import MinePic from "/Images/mine3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "../.././App.css";
 
 const HeaderSection = () => {
     useEffect(() => {
@@ -18,8 +19,8 @@ const HeaderSection = () => {
         alt="Profile Picture"
         className="w-32 h-32 rounded-full border-4 border-yellow-500 mb-4 object-cover"
       />
-      <h1 className="text-3xl font-semibold">Hi, I'm Ahmad Ali</h1>
-      <p className="text-xl mt-2">
+      <h1 className="text-3xl font-semibold font-break">Hi, I'm Ahmad Ali</h1>
+      <p className="text-xl mt-2 text-center">
         Web Developer | Software Engineer | Problem Solver
       </p>
     </div>

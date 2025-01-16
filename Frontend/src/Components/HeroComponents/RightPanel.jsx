@@ -2,7 +2,7 @@
 import profilePic from "/Images/Logo2.png";
 const RightPanel = () => {
   return (
-    <div className="w-[50%] lg:w-[100%]">
+    <div className="w-[100%] sm:w-[60%] md:w-[50%] lg:w-[100%]">
       <img
         src={profilePic}
         alt=""

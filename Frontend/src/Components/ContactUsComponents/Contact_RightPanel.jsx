@@ -3,11 +3,11 @@ import "../.././App.css";
 import { IoIosSend } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ContactFormSubmission } from "../Routes/ApiRoutes";
+import { ContactFormSubmission, SendEmails } from "../Routes/ApiRoutes";
 
 const Contact_RightPanel = () => {
   const [isSuccess, setIsSuccess] = useState(false);
-  const [loading, setLoading] = useState(false);  // Loading state
+  const [loading, setLoading] = useState(false);  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,10 +24,10 @@ const Contact_RightPanel = () => {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-    setLoading(true);  // Set loading to true when submission starts
-    await ContactFormSubmission(formData, setIsSuccess, setLoading);  // Pass setLoading to handle loading state
+    setLoading(true);  
+    await ContactFormSubmission(formData, setIsSuccess, setLoading); 
+    await SendEmails(formData.email,formData.name,formData.message)
   };
-
   useEffect(() => {
     if (isSuccess) {
       setFormData({

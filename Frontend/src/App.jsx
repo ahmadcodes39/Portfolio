@@ -14,10 +14,10 @@ export default function App() {
       <Navbar />
       <HeroSection />
       <MainSection />
-      <div className="p-10">
+      <div className="p-5 sm:p-10">
         <AboutMe />
       </div>
-      <div className="p-16">
+      <div className="p-5 sm:p-16">
         <ContactUs />
       </div>
       <div className="pt-16">

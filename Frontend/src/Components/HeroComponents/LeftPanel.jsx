@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { ReactTyped } from "react-typed";
+import "../.././App.css";
+
 
 const LeftPanel = () => {
   const [isTypedReady, setIsTypedReady] = useState(false);
@@ -9,7 +11,7 @@ const LeftPanel = () => {
   }, []);
 
   return (
-    <div className="animate__animated animate__fadeInUp md:w-full">
+    <div className="custom-width animate__animated animate__fadeInUp w-full">
       <h2 className="text-yellow-300 animate__animated animate__fadeInUp">
         HI THERE.
       </h2>
@@ -29,7 +31,7 @@ const LeftPanel = () => {
           />
         )}
       </h1>
-      <p className="text-white w-3/4">
+      <p className="text-white  w-full md:w-3/4">
         A passionate Computer Science student with a keen interest in web
         development and AI. I specialize in building responsive, user-friendly
         applications using React, Redux, and the MERN stack. I love solving

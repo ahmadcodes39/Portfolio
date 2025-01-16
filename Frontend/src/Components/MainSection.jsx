@@ -30,7 +30,7 @@ const MainSection = () => {
   }, []);
 
   return (
-    <div className="p-16">
+    <div className="sm:block p-5 sm:p-16">
       <Mainheading title={"Services"} certainId={"services"} />
       <SideHeading title1={"Web Development"} title2={" Services"} />
 
@@ -76,7 +76,7 @@ const MainSection = () => {
         <Mainheading title={"Projects"} certainId={"projects"} />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="flex flex-col justify-center items-center sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         <div data-aos="fade-right">
           <a
             href="https://github.com/ahmadcodes39/EAD-Web-Project"

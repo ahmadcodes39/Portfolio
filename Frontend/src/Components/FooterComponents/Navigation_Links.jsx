@@ -7,7 +7,7 @@ const Navigation_Links = () => {
 
   return (
     <div>
-      <ul className="flex gap-4 list-none"> 
+      <ul className="flex gap-4 list-none custom-gap"> 
         {["home", "about", "projects", "services", "contact"].map((link, index) => (
           <li key={index}>
             <a
