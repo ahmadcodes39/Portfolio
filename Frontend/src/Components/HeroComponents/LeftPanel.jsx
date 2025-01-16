@@ -40,8 +40,8 @@ const LeftPanel = () => {
       </p>
 
       <a
-        href="/Resume/Resume.docx"
-        download="Resume.docx"
+        href="/Resume/MyResume.pdf"
+        download="Resume.pdf"
       >
         <button className="bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 hover:rounded-xl p-4 text-center text-lg font-semibold transition duration-300 mt-3 md:w-1/2 md:text-center w-full ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 shadow-md hover:shadow-lg animate__animated animate__fadeInLeft">
           Let's Get Started
