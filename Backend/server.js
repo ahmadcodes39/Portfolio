@@ -5,7 +5,6 @@ import connectToMongo from "./Config/db.js";
 import cors from "cors";
 
 dotenv.config();
-
 connectToMongo();
 
 const app = express();

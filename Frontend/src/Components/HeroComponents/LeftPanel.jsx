@@ -20,10 +20,9 @@ const LeftPanel = () => {
           <ReactTyped
             strings={[
               "I Am Ahmad Ali Shah!",
-              "I Am Frontend React Developer",
-              "I Am Backend Node.js Developer",
-              "I Am .Net MVC Framework Developer",
-              "Let’s build something amazing!",
+              "I Am React Developer",
+              "I Am  Node.js Developer",
+              "I Am .Net MVC Developer",
             ]}
             typeSpeed={50}
             backSpeed={30}
