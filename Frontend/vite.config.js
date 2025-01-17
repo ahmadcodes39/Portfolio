@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'portfolio-indol-eta-73.vercel.app',
+      '/api': 'http://localhost:8080',
     },
   },
 })
