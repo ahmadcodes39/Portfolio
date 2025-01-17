@@ -21,7 +21,7 @@ const ProjectCard = ({ img, title, content, tecStack }) => {
           </span>
           <button
             type="button"
-            className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-yellow-600 dark:text-gray-50"
+            className="flex items-center justify-center w-full p-3 font-semibold tracking-wide bg-yellow-600 rounded-md dark:bg-yellow-600 dark:text-gray-50"
           >
             Explore more
           </button>
