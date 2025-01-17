@@ -16,7 +16,7 @@ import AdminDashboard from "/Images/AdminDashboard.png";
 
 import Mainheading from "./MainSectionComponents/Mainheading";
 import ServicesCard from "./MainSectionComponents/ServicesCard";
-import SideHeading from "./MainSectionComponents/sideHeading";
+import Side_Heading from "./MainSectionComponents/Side_Heading";
 import ProjectCard from "./MainSectionComponents/ProjectCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +32,7 @@ const MainSection = () => {
   return (
     <div className="sm:block p-5 sm:p-16">
       <Mainheading title={"Services"} certainId={"services"} />
-      <SideHeading title1={"Web Development"} title2={" Services"} />
+      <Side_Heading title1={"Web Development"} title2={" Services"} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         <div data-aos="fade-right">
@@ -52,7 +52,7 @@ const MainSection = () => {
         </div>
       </div>
 
-      <SideHeading title1={".NET Framework"} title2={" Services"} />
+      <Side_Heading title1={".NET Framework"} title2={" Services"} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div data-aos="fade-right">
