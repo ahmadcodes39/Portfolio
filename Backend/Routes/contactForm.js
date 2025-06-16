@@ -23,35 +23,35 @@ const validate = [
     .withMessage("Message length should be between 3 to 500 characters"),
 ];
 
-router.post("/ContactformData", validate, async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      const errorMessages = errors.array().map((err) => ({
-        field: err.param, // Field where the error occurred
-        Error: err.msg, // Error message for that field
-      }));
+// router.post("/ContactformData", validate, async (req, res) => {
+//   try {
+//     const errors = validationResult(req);
+//     if (!errors.isEmpty()) {
+//       const errorMessages = errors.array().map((err) => ({
+//         field: err.param, // Field where the error occurred
+//         Error: err.msg, // Error message for that field
+//       }));
 
-      return res.status(400).json({
-        errors: errorMessages,
-      });
-    }
+//       return res.status(400).json({
+//         errors: errorMessages,
+//       });
+//     }
 
-    const { name, email, message } = req.body;
+//     const { name, email, message } = req.body;
 
-    const newContact = await contact.create({
-      name,
-      email,
-      message,
-    });
+//     const newContact = await contact.create({
+//       name,
+//       email,
+//       message,
+//     });
 
-    res.status(200).json({ message: "Response sent successfully!" });
-  } catch (error) {
-    res
-      .status(500)
-      .json({ message: "Failed to submit form", error: error.message });
-  }
-});
+//     res.status(200).json({ message: "Response sent successfully!" });
+//   } catch (error) {
+//     res
+//       .status(500)
+//       .json({ message: "Failed to submit form", error: error.message });
+//   }
+// });
 
 router.post("/send-emailRecipent", (req, res) => {
   const { userName , emailTo } = req.body; 

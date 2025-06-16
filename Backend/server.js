@@ -1,11 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
 import router from "./Routes/contactForm.js";
-import connectToMongo from "./Config/db.js";
+// import connectToMongo from "./Config/db.js";
 import cors from "cors";
 
 dotenv.config();
-connectToMongo();
+// connectToMongo();
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -21,7 +21,9 @@ app.use(express.json());
 
 
 app.use("/api", router);
-
+app.get("/",(req,res)=>{
+  res.send("Api is running..........")
+})
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
